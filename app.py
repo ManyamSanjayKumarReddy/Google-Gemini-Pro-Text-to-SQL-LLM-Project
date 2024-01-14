@@ -55,10 +55,6 @@ def read_sql_query(sql, db):
 st.set_page_config(page_title="Student Data Analyzer", layout="wide")
 st.title("Student Data Analyzer Application using Google Gemini Pro")
 
-# Sidebar with images and information
-st.sidebar.title("Google Gemini Pro Info")
-st.sidebar.image("img.png", use_column_width=True, caption="Gemini Pro Logo")
-
 
 # Define Your Prompt
 prompt = [
