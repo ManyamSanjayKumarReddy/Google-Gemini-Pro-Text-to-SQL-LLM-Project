@@ -4,6 +4,7 @@ import os
 import sqlite3
 import google.generativeai as genai
 import csv
+import webbrowser  # Import the webbrowser module
 
 # Load environment variables
 load_dotenv()
@@ -30,6 +31,9 @@ def get_gemini_response(question, prompt):
     # Remove formatting (```sql) from the response
     clean_response = response.text.replace("```sql", "").strip()
 
+    # Remove triple backticks from the generated SQL queries
+    clean_response = clean_response.strip('`')
+
     # Split multiple statements into a list
     sql_statements = [statement.strip() for statement in clean_response.split(';') if statement.strip()]
 
@@ -48,7 +52,7 @@ def read_sql_query(sql, db):
     if not rows:
         st.warning("No data found for the given query.")
     else:
-        st.subheader("SQL Query Result:")
+        st.subheader(" Result:")
         st.table(rows)
     return rows
 
@@ -94,7 +98,41 @@ def get_top_searches():
 
 # Streamlit App
 st.set_page_config(page_title="Student Data Analyzer", layout="wide")
-st.title("Student Data Analyzer Application using Google Gemini Pro")
+st.header("Student Data Analyzer Application using Google Gemini Pro")
+
+
+import base64
+@st.cache_data
+def get_img_as_base64(file):
+    with open(file, "rb") as f:
+       data = f.read()
+    return base64.b64encode(data).decode()
+
+
+img = get_img_as_base64("bg-set.jpg")
+
+
+page_bg_img = f"""
+<style>
+[data-testid="stAppViewContainer"] > .main {{
+background-image: url("data:image/png;base64,{img}");
+background-size: 150%;
+background-position: top left;
+background-repeat: no-repeat;
+background-attachment: local;
+}}
+
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# Add the "Report Bugs" button
+if st.sidebar.button("Want to Report Bugs? Click here"):
+    # Replace 'your_instagram_url' with your actual Instagram profile URL
+    instagram_url = "https://www.instagram.com/_04_sanju__/"
+    webbrowser.open_new_tab(instagram_url)
+
 
 # Sidebar Features
 st.sidebar.title("Features")
@@ -104,6 +142,7 @@ st.sidebar.markdown("- Retrieve and display data from the MASTER database.")
 st.sidebar.markdown("- Handle errors and provide informative messages.")
 st.sidebar.markdown("- User-friendly interface with Streamlit.")
 st.sidebar.markdown("- Real-time interaction and feedback.")
+
 
 # Define Your Prompt
 prompt = [
@@ -117,7 +156,7 @@ prompt = [
     
     Feel free to ask any SQL-related questions about the MASTER database. Here are some sample questions:
     
-    1. Retrieve all records for students with a CGPA greater than 8.
+    1. Retrieve all records for students with a CGPA greater than 9.
     2. Find the count of students with active backlogs.
     3. Show details for students who have an academic gap of more than 1 year.
     4. Get the average CGPA for students in the 'Data Science' UG-Specialization.
@@ -125,13 +164,23 @@ prompt = [
     6. Show the top 5 students based on their 12th percentage.
     7. Retrieve details for students born after a certain date.
     
+    also if they are entering any name you have to retrive complete details of the Student using LIKE Method or Function 
+
+    please always don't display the complete details only display the Important details like Name, Registration , SECTION, CGPA 
+
+    also if they are entering anything starting with 99200 consider this was Registration Number & Find the Details of the Entered Number
+
+    also if they are entering and 4 digit number it's an Registration number & Search if that 4 digit number is any sub number of any Registration number and return the Details 
+    
     Remember, these are just sample questions. You can ask any SQL question, and I'll provide you with the corresponding SQL query.
     
     also, the SQL code should not have ``` in the beginning or end and sql word in output.
+
+    
     """
 ]
 
-question = st.text_input("Input: ", key="input", placeholder = "Give me the List of Students with CGPA Greater than 9.01")
+question = st.text_input("", key="input", placeholder = "Give me the List of Students with CGPA Greater than 9.01")
 ask_button = st.button("Ask the Question❓")
 
 
@@ -150,7 +199,7 @@ if ask_button:
 # Get and display top searches with custom CSS
 top_searches = get_top_searches()
 if top_searches:
-    st.subheader("Recent Searches 📈")
+    st.subheader("Top Searches 📈")
 
     # Custom CSS for small containers in a row
     css = """
@@ -168,6 +217,18 @@ if top_searches:
             font-size: 12px;
             font-weight: bold;
         }
+
+        @media (max-width: 600px) {
+        .top-search-container {
+            width: 100%; /
+            display: inline; 
+            margin: 10px 5px; 
+            font-size: 8px;
+            white-space: pre;
+            
+            
+        }
+    }
     </style>
     """
     st.markdown(css, unsafe_allow_html=True)
@@ -220,6 +281,6 @@ st.markdown(
 # Contact Information
 st.markdown(
     """
-    Contact +91 7601003069 for any Collaborations and Feedback 📞
+    Contact +91 7601003069 or sanjaykumarreddymanyam@gmail.com for any Collaborations and Feedback 📞
     """
 )

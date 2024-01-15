@@ -1,57 +1,2332 @@
 Question,Query
-Top 10 Students ,"SELECT
+Kadiyala chakradhar,"SELECT *
+FROM MASTER
+WHERE Name LIKE '%Kadiyala chakradhar%';"
+Sanjay,"SELECT
+    Name, Registration, DOB, Gender, Department, Section,
+    Specialization, CGPA, Active Backlogs, History Arrears, Academic Gap,
+    Diploma-Percentage, Diploma-Specialization, `12-Percentage`, `10th-Percentage`,
+    Aadhar, PAN, City, `City Pincode`, District, State, `Mobile-1`, Email
+FROM
+    MASTER
+WHERE
+    Name LIKE '%Sanjay%'"
+Sanjay Kumar Reddy,"```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%Sanjay Kumar Reddy%';
+```"
+Sanjay Kumar Reddy,"```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%Sanjay Kumar Reddy%';
+```"
+Sanjay Kumar Reddy,"SELECT *
+FROM MASTER
+WHERE Name LIKE '%Sanjay Kumar Reddy%';"
+Sanjay Kumar Reddy,"SELECT Registration, CGPA, Section, Department
+FROM MASTER
+WHERE Name LIKE '%Sanjay Kumar Reddy%';"
+Sanjay Kumar Reddy,"SELECT Name, Registration, Section, CGPA, `Mobile-1`
+FROM MASTER
+WHERE Name LIKE ""%Sanjay Kumar Reddy%"";"
+Gowthami,"SELECT Name, Registration, Section, CGPA, `Mobile-1`
+FROM MASTER
+WHERE Name LIKE '%Gowthami%';"
+Kavya,"SELECT Name, Registration, Section, CGPA, Mobile-1
+FROM MASTER
+WHERE Name LIKE '%Kavya%';"
+Kavyasri,"SELECT Name, Registration, SECTION, CGPA, `Mobile-1`
+FROM MASTER
+WHERE Name LIKE '%Kavyasri%';"
+Kalyan,"SELECT Name, Registration , SECTION, CGPA , Mobile-1
+FROM MASTER
+WHERE Name LIKE '%Kalyan%';"
+Kalyan,"SELECT
+    Name,
+    Registration,
+    Section,
+    CGPA,
+    ""Mobile-1""
+FROM
+    MASTER
+WHERE
+    Name LIKE '%Kalyan%'"
+Kavya,"SELECT Name, Registration, Section, CGPA, `Mobile-1`
+FROM MASTER
+WHERE Name LIKE '%Kavya%';"
+Gayathri,"SELECT Name, Registration, Section, CGPA, `Mobile-1`
+FROM MASTER
+WHERE Name LIKE '%Gayathri%';"
+Sanjay,"SELECT Name, Registration, Section, CGPA, Mobile-1
+FROM MASTER
+WHERE Name LIKE '%Sanjay%'"
+Sanjay,"SELECT Name, Registration, SECTION, CGPA, `Mobile-1`
+FROM MASTER
+WHERE Name LIKE '%Sanjay%';"
+Jathin,"SELECT Name, Registration, Section, CGPA, `Mobile-1`
+FROM MASTER
+WHERE Name LIKE '%Jathin%';"
+Kadiyala chakradhar,"```
+SELECT
+    Name,
+    Registration,
+    Section,
+    CGPA,
+    Mobile-1
+FROM
+    MASTER
+WHERE
+    Name LIKE '%Kadiyala chakradhar%'
+```"
+Kadiyala chakradhar,"SELECT Name,Registration,Section,CGPA,Mobile-1 FROM MASTER WHERE Name LIKE '%Kadiyala%'"
+Kadiyala chakradhar,"SELECT Name, Registration, Section, CGPA, Mobile-1
+FROM MASTER
+WHERE Name LIKE '%Kadiyala chakradhar%';"
+Kadiyala chakradhar,"SELECT Name, Registration, Section, CGPA, Mobile-1
+FROM MASTER
+WHERE Name LIKE '%Kadiyala chakradhar%';"
+Kadiyala chakradhar,"SELECT Name, Registration, Section, CGPA, Mobile-1
+FROM MASTER
+WHERE Name LIKE '%Kadiyala chakradhar%';"
+chakradhar,"SELECT Name, Registration, Section, CGPA, `Mobile-1`
+FROM MASTER
+WHERE Name LIKE '%chakradhar%';"
+chakradhar,"SELECT Name, Registration, Section, CGPA, `Mobile-1`
+FROM MASTER
+WHERE Name LIKE ""%chakradhar%"";"
+santosh,"SELECT 
+    Name, 
+    Registration, 
+    Section, 
+    CGPA, 
+    Mobile-1
+FROM 
+    MASTER
+WHERE 
+    Name LIKE '%santosh%'"
+santosh,"SELECT Name, Registration, Section, CGPA, `Mobile-1`
+FROM MASTER
+WHERE Name LIKE '%santosh%';"
+vinay,"SELECT Name, Registration, Section, CGPA, Mobile-1
+FROM MASTER
+WHERE Name LIKE '%vinay%';"
+vinay,"SELECT Name, Registration, Section, CGPA, Mobile-1
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Section IN ('UG-A', 'UG-B', 'UG-C');"
+vinay,"SELECT
 Name,
 Registration,
+SECTION,
 CGPA
 FROM
 MASTER
-ORDER BY CGPA DESC
-LIMIT 10;"
-Topper of G Section,"SELECT Name
+WHERE
+Name LIKE '%vinay%';"
+Bhavani,"SELECT Name, Registration, Section, CGPA
 FROM MASTER
-WHERE Section = 'G'
-ORDER BY CGPA DESC
-LIMIT 1;"
-Topper of H Section,"SELECT Name, CGPA
+WHERE Name LIKE '%Bhavani%';"
+Get the List of the Students with name Kavya,"SELECT Name, Registration, Section, CGPA
 FROM MASTER
-WHERE Section = 'H'
-ORDER BY CGPA DESC
-LIMIT 1;"
-list of Students from City Rayachoty,"SELECT *
+WHERE Name LIKE '%Kavya%';"
+Display Entire DB of only 1 to 5 Coloumns,"SELECT Name, Registration, Department, Specialization, CGPA
 FROM MASTER
-WHERE City = 'Rayachoty';"
-Top 10 Students,"SELECT
-    Name,
+LIMIT 5;"
+Display Entire DB of only 1 to 5 Coloumns also upto 20 Rows,"SELECT
     Registration,
+    Name,
+    Department,
+    Section,
     CGPA
 FROM
     MASTER
-ORDER BY
-    CGPA DESC
-LIMIT 10;"
-Top 10 Students,"SELECT
+LIMIT 20;"
+Ranks ,"SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE CGPA >= 9;"
+Ranks from 1 to 20,"SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE CGPA BETWEEN 9.0 AND 10.0
+ORDER BY CGPA DESC
+LIMIT 20;"
+Ranks from 1 to 30,"```
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE CGPA BETWEEN 9 AND 10
+ORDER BY CGPA DESC
+LIMIT 30;
+```"
+Ranks from 1 to 30,"```
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE CGPA BETWEEN 9 AND 10
+ORDER BY CGPA DESC
+LIMIT 30;
+```"
+Ranks from 1 to 30,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA >= 9
+ORDER BY CGPA DESC
+LIMIT 30;"
+Ranks from 1 to 30,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+
+
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE Active_Backlogs > 0;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Academic_Gap > 1;
+
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE UG_Specialization = 'Data Science';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE City = 'Hyderabad' AND State = 'Telangana';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';"
+Ranks from 1 to 30,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+
+
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE Active_Backlogs > 0;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Academic_Gap > 1;
+
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE UG_Specialization = 'Data Science';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE City = 'Hyderabad' AND State = 'Telangana';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';"
+Ranks from 1 to 30,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+
+
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE Active_Backlogs > 0;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Academic_Gap > 1;
+
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE UG_Specialization = 'Data Science';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE City = 'Hyderabad' AND State = 'Telangana';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';"
+Ranks from 1 to 30,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+
+
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE Active_Backlogs > 0;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Academic_Gap > 1;
+
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE UG_Specialization = 'Data Science';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE City = 'Hyderabad' AND State = 'Telangana';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';"
+Ranks from 1 to 30,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+
+
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE Active_Backlogs > 0;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Academic_Gap > 1;
+
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE UG_Specialization = 'Data Science';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE City = 'Hyderabad' AND State = 'Telangana';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';"
+Ranks from 1 to 30,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+
+
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE Active_Backlogs > 0;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Academic_Gap > 1;
+
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE UG_Specialization = 'Data Science';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE City = 'Hyderabad' AND State = 'Telangana';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';"
+Ranks from 1 to 30,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+
+
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE Active_Backlogs > 0;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Academic_Gap > 1;
+
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE UG_Specialization = 'Data Science';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE City = 'Hyderabad' AND State = 'Telangana';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';"
+Ranks from 1 to 30,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+
+
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE Active_Backlogs > 0;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Academic_Gap > 1;
+
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE UG_Specialization = 'Data Science';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE City = 'Hyderabad' AND State = 'Telangana';
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';"
+Ranks of top 100 ,"```sql
+SELECT 
     Name,
-    Registration,
+    Registration, 
+    SECTION,
     CGPA
-FROM
-    MASTER
-ORDER BY
-    CGPA DESC
-LIMIT 10;"
-Top 20 Students,"SELECT Name, CGPA
 FROM MASTER
 ORDER BY CGPA DESC
-LIMIT 20;"
-Top 20 Students,"SELECT Name, CGPA
+LIMIT 100;
+```"
+Ranks of top 100 ,"```sql
+SELECT 
+    Name,
+    Registration, 
+    SECTION,
+    CGPA
 FROM MASTER
 ORDER BY CGPA DESC
-LIMIT 20;"
-Top 50 Students,"SELECT *
+LIMIT 100;
+```"
+Ranks of top 100 ,"```sql
+SELECT Name, Registration, CGPA, 'Rank '||ROW_NUMBER() OVER(ORDER BY CGPA DESC) AS Rank
 FROM MASTER
-ORDER BY CGPA DESC
-LIMIT 50;"
-Topper of M Section,"SELECT Name, CGPA, Department, Section
+WHERE CGPA >= (SELECT MIN(CGPA) FROM (SELECT CGPA, ROW_NUMBER() OVER(ORDER BY CGPA DESC) AS Rank FROM MASTER) AS RankedRecords WHERE Rank <= 100)
+ORDER BY CGPA DESC;
+```"
+Topper from Khammam,"SELECT Name, Registration, Section, CGPA
 FROM MASTER
-WHERE Section = 'M'
+WHERE City = 'Khammam'
 ORDER BY CGPA DESC
 LIMIT 1;"
+Find Lakkireddypalli ,"SELECT
+Name,
+Registration,
+Section,
+CGPA
+FROM
+MASTER
+WHERE
+City LIKE '%Lakkireddypalli%'"
+Find Lakkireddypalli in entire DB,"SELECT DISTINCT Name
+FROM MASTER
+WHERE Name LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Registration
+FROM MASTER
+WHERE Registration LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT DOB
+FROM MASTER
+WHERE DOB LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Gender
+FROM MASTER
+WHERE Gender LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Department
+FROM MASTER
+WHERE Department LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Section
+FROM MASTER
+WHERE Section LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Specialization
+FROM MASTER
+WHERE Specialization LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT CGPA
+FROM MASTER
+WHERE CGPA LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Active Backlogs
+FROM MASTER
+WHERE Active Backlogs LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT History Arrears
+FROM MASTER
+WHERE History Arrears LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Academic Gap
+FROM MASTER
+WHERE Academic Gap LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Diploma-Percentage
+FROM MASTER
+WHERE Diploma-Percentage LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Diploma-Specialization
+FROM MASTER
+WHERE Diploma-Specialization LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT `12-Percentage`
+FROM MASTER
+WHERE `12-Percentage` LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT `10th-Percentage`
+FROM MASTER
+WHERE `10th-Percentage` LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Aadhar
+FROM MASTER
+WHERE Aadhar LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT PAN
+FROM MASTER
+WHERE PAN LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT City
+FROM MASTER
+WHERE City LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT City Pincode
+FROM MASTER
+WHERE City Pincode LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT District
+FROM MASTER
+WHERE District LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT State
+FROM MASTER
+WHERE State LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Mobile-1
+FROM MASTER
+WHERE Mobile-1 LIKE '%Lakkireddypalli%' 
+UNION 
+SELECT DISTINCT Email
+FROM MASTER
+WHERE Email LIKE '%Lakkireddypalli%'"
+Find Lakkireddypalli in entire DB,"SELECT *
+FROM MASTER
+WHERE CITY LIKE '%Lakkireddypalli%';"
+Find amulya in entire DB,"SELECT
+Name,
+Registration,
+Section,
+CGPA
+FROM
+MASTER
+WHERE
+Name LIKE '%amulya%';"
+Kadiyala chakradhar,"SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE Name LIKE '%Kadiyala chakradhar%';"
+get Kadiyala chakradhar's City,"SELECT City
+FROM MASTER
+WHERE Name LIKE 'Kadiyala chakradhar%';"
+4280,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA >= 9;"
+9920004280,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Mobile-1 = '9920004280';"
+9920004280,"SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE Mobile-1 = '9920004280';"
+student with Registration number 9920004280,"SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE Registration = 9920004280;"
+student with Registration number 4298,"SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE Registration = 4298;"
+student with Registration number 4298,"SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE Registration = 4298;"
+student containing Registration number 4298,"SELECT Name, Registration, CGPA, Section
+FROM MASTER
+WHERE Registration = 4298;"
+student containing Registration number 4298,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Registration = '4298';"
+student containing Registration number 9920004298,"SELECT 
+Name, Registration, Section, CGPA
+FROM 
+MASTER
+WHERE 
+Registration = 9920004298;"
+4280,"SELECT Name, Registration, Section, CGPA 
+FROM MASTER
+WHERE Registration = '4280';"
+4280,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Registration = 4280"
+4280,"SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE Registration LIKE '992000%'"
+4280,"SELECT Name, Registration, SECTION, CGPA 
+FROM MASTER 
+WHERE Registration LIKE '992000%'"
+4280,"SELECT Name, Registration, Section, CGPA 
+FROM MASTER
+WHERE Registration LIKE '%4280%';"
+,"Sure, I can help you with SQL queries for the MASTER database.
+
+**1. Retrieve all records for students with a CGPA greater than 9:**
+
+```
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+```
+
+**2. Find the count of students with active backlogs:**
+
+```
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE `Active Backlogs` > 0;
+```
+
+**3. Show details for students who have an academic gap of more than 1 year:**
+
+```
+SELECT Name, Registration, SECTION, Academic_Gap
+FROM MASTER
+WHERE Academic_Gap > 1;
+```
+
+**4. Get the average CGPA for students in the 'Data Science' UG-Specialization:**
+
+```
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Department = 'UG';
+```
+
+**5. Find students from a specific city and state:**
+
+```
+SELECT Name, Registration, SECTION, City, State
+FROM MASTER
+WHERE City = 'Pune'
+AND State = 'Maharashtra';
+```
+
+**6. Show the top 5 students based on their 12th percentage:**
+
+```
+SELECT Name, Registration, SECTION, `12-Percentage`
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+```
+
+**7. Retrieve details for students born after a certain date:**
+
+```
+SELECT Name, Registration, SECTION, DOB
+FROM MASTER
+WHERE DOB > '1995-01-01';
+```
+
+**8. Retrieve complete details of the Student using LIKE Method or Function:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';
+```
+
+**9. Find the Details of the Entered Registration Number:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+```
+
+**10. Search if that 4 digit number is any sub number of any Registration number and return the Details:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%9920%';
+```
+
+Remember to replace the placeholder values (e.g., 'John', '99200', '9920') with the actual values you want to search for.
+
+I hope this helps! Let me know if you have any other questions."
+,"Sure, I can help you with SQL queries for the MASTER database.
+
+**1. Retrieve all records for students with a CGPA greater than 9:**
+
+```
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+```
+
+**2. Find the count of students with active backlogs:**
+
+```
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE `Active Backlogs` > 0;
+```
+
+**3. Show details for students who have an academic gap of more than 1 year:**
+
+```
+SELECT Name, Registration, SECTION, Academic_Gap
+FROM MASTER
+WHERE Academic_Gap > 1;
+```
+
+**4. Get the average CGPA for students in the 'Data Science' UG-Specialization:**
+
+```
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Department = 'UG';
+```
+
+**5. Find students from a specific city and state:**
+
+```
+SELECT Name, Registration, SECTION, City, State
+FROM MASTER
+WHERE City = 'Pune'
+AND State = 'Maharashtra';
+```
+
+**6. Show the top 5 students based on their 12th percentage:**
+
+```
+SELECT Name, Registration, SECTION, `12-Percentage`
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+```
+
+**7. Retrieve details for students born after a certain date:**
+
+```
+SELECT Name, Registration, SECTION, DOB
+FROM MASTER
+WHERE DOB > '1995-01-01';
+```
+
+**8. Retrieve complete details of the Student using LIKE Method or Function:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';
+```
+
+**9. Find the Details of the Entered Registration Number:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+```
+
+**10. Search if that 4 digit number is any sub number of any Registration number and return the Details:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%9920%';
+```
+
+Remember to replace the placeholder values (e.g., 'John', '99200', '9920') with the actual values you want to search for.
+
+I hope this helps! Let me know if you have any other questions."
+,"Sure, I can help you with SQL queries for the MASTER database.
+
+**1. Retrieve all records for students with a CGPA greater than 9:**
+
+```
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+```
+
+**2. Find the count of students with active backlogs:**
+
+```
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE `Active Backlogs` > 0;
+```
+
+**3. Show details for students who have an academic gap of more than 1 year:**
+
+```
+SELECT Name, Registration, SECTION, Academic_Gap
+FROM MASTER
+WHERE Academic_Gap > 1;
+```
+
+**4. Get the average CGPA for students in the 'Data Science' UG-Specialization:**
+
+```
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Department = 'UG';
+```
+
+**5. Find students from a specific city and state:**
+
+```
+SELECT Name, Registration, SECTION, City, State
+FROM MASTER
+WHERE City = 'Pune'
+AND State = 'Maharashtra';
+```
+
+**6. Show the top 5 students based on their 12th percentage:**
+
+```
+SELECT Name, Registration, SECTION, `12-Percentage`
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+```
+
+**7. Retrieve details for students born after a certain date:**
+
+```
+SELECT Name, Registration, SECTION, DOB
+FROM MASTER
+WHERE DOB > '1995-01-01';
+```
+
+**8. Retrieve complete details of the Student using LIKE Method or Function:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';
+```
+
+**9. Find the Details of the Entered Registration Number:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+```
+
+**10. Search if that 4 digit number is any sub number of any Registration number and return the Details:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%9920%';
+```
+
+Remember to replace the placeholder values (e.g., 'John', '99200', '9920') with the actual values you want to search for.
+
+I hope this helps! Let me know if you have any other questions."
+,"Sure, I can help you with SQL queries for the MASTER database.
+
+**1. Retrieve all records for students with a CGPA greater than 9:**
+
+```
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+```
+
+**2. Find the count of students with active backlogs:**
+
+```
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE `Active Backlogs` > 0;
+```
+
+**3. Show details for students who have an academic gap of more than 1 year:**
+
+```
+SELECT Name, Registration, SECTION, Academic_Gap
+FROM MASTER
+WHERE Academic_Gap > 1;
+```
+
+**4. Get the average CGPA for students in the 'Data Science' UG-Specialization:**
+
+```
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Department = 'UG';
+```
+
+**5. Find students from a specific city and state:**
+
+```
+SELECT Name, Registration, SECTION, City, State
+FROM MASTER
+WHERE City = 'Pune'
+AND State = 'Maharashtra';
+```
+
+**6. Show the top 5 students based on their 12th percentage:**
+
+```
+SELECT Name, Registration, SECTION, `12-Percentage`
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+```
+
+**7. Retrieve details for students born after a certain date:**
+
+```
+SELECT Name, Registration, SECTION, DOB
+FROM MASTER
+WHERE DOB > '1995-01-01';
+```
+
+**8. Retrieve complete details of the Student using LIKE Method or Function:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';
+```
+
+**9. Find the Details of the Entered Registration Number:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+```
+
+**10. Search if that 4 digit number is any sub number of any Registration number and return the Details:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%9920%';
+```
+
+Remember to replace the placeholder values (e.g., 'John', '99200', '9920') with the actual values you want to search for.
+
+I hope this helps! Let me know if you have any other questions."
+,"Sure, I can help you with SQL queries for the MASTER database.
+
+**1. Retrieve all records for students with a CGPA greater than 9:**
+
+```
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+```
+
+**2. Find the count of students with active backlogs:**
+
+```
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE `Active Backlogs` > 0;
+```
+
+**3. Show details for students who have an academic gap of more than 1 year:**
+
+```
+SELECT Name, Registration, SECTION, Academic_Gap
+FROM MASTER
+WHERE Academic_Gap > 1;
+```
+
+**4. Get the average CGPA for students in the 'Data Science' UG-Specialization:**
+
+```
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Department = 'UG';
+```
+
+**5. Find students from a specific city and state:**
+
+```
+SELECT Name, Registration, SECTION, City, State
+FROM MASTER
+WHERE City = 'Pune'
+AND State = 'Maharashtra';
+```
+
+**6. Show the top 5 students based on their 12th percentage:**
+
+```
+SELECT Name, Registration, SECTION, `12-Percentage`
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+```
+
+**7. Retrieve details for students born after a certain date:**
+
+```
+SELECT Name, Registration, SECTION, DOB
+FROM MASTER
+WHERE DOB > '1995-01-01';
+```
+
+**8. Retrieve complete details of the Student using LIKE Method or Function:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';
+```
+
+**9. Find the Details of the Entered Registration Number:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+```
+
+**10. Search if that 4 digit number is any sub number of any Registration number and return the Details:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%9920%';
+```
+
+Remember to replace the placeholder values (e.g., 'John', '99200', '9920') with the actual values you want to search for.
+
+I hope this helps! Let me know if you have any other questions."
+,"Sure, I can help you with SQL queries for the MASTER database.
+
+**1. Retrieve all records for students with a CGPA greater than 9:**
+
+```
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+```
+
+**2. Find the count of students with active backlogs:**
+
+```
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE `Active Backlogs` > 0;
+```
+
+**3. Show details for students who have an academic gap of more than 1 year:**
+
+```
+SELECT Name, Registration, SECTION, Academic_Gap
+FROM MASTER
+WHERE Academic_Gap > 1;
+```
+
+**4. Get the average CGPA for students in the 'Data Science' UG-Specialization:**
+
+```
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Department = 'UG';
+```
+
+**5. Find students from a specific city and state:**
+
+```
+SELECT Name, Registration, SECTION, City, State
+FROM MASTER
+WHERE City = 'Pune'
+AND State = 'Maharashtra';
+```
+
+**6. Show the top 5 students based on their 12th percentage:**
+
+```
+SELECT Name, Registration, SECTION, `12-Percentage`
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+```
+
+**7. Retrieve details for students born after a certain date:**
+
+```
+SELECT Name, Registration, SECTION, DOB
+FROM MASTER
+WHERE DOB > '1995-01-01';
+```
+
+**8. Retrieve complete details of the Student using LIKE Method or Function:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';
+```
+
+**9. Find the Details of the Entered Registration Number:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+```
+
+**10. Search if that 4 digit number is any sub number of any Registration number and return the Details:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%9920%';
+```
+
+Remember to replace the placeholder values (e.g., 'John', '99200', '9920') with the actual values you want to search for.
+
+I hope this helps! Let me know if you have any other questions."
+,"Sure, I can help you with SQL queries for the MASTER database.
+
+**1. Retrieve all records for students with a CGPA greater than 9:**
+
+```
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+```
+
+**2. Find the count of students with active backlogs:**
+
+```
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE `Active Backlogs` > 0;
+```
+
+**3. Show details for students who have an academic gap of more than 1 year:**
+
+```
+SELECT Name, Registration, SECTION, Academic_Gap
+FROM MASTER
+WHERE Academic_Gap > 1;
+```
+
+**4. Get the average CGPA for students in the 'Data Science' UG-Specialization:**
+
+```
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Department = 'UG';
+```
+
+**5. Find students from a specific city and state:**
+
+```
+SELECT Name, Registration, SECTION, City, State
+FROM MASTER
+WHERE City = 'Pune'
+AND State = 'Maharashtra';
+```
+
+**6. Show the top 5 students based on their 12th percentage:**
+
+```
+SELECT Name, Registration, SECTION, `12-Percentage`
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+```
+
+**7. Retrieve details for students born after a certain date:**
+
+```
+SELECT Name, Registration, SECTION, DOB
+FROM MASTER
+WHERE DOB > '1995-01-01';
+```
+
+**8. Retrieve complete details of the Student using LIKE Method or Function:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';
+```
+
+**9. Find the Details of the Entered Registration Number:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+```
+
+**10. Search if that 4 digit number is any sub number of any Registration number and return the Details:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%9920%';
+```
+
+Remember to replace the placeholder values (e.g., 'John', '99200', '9920') with the actual values you want to search for.
+
+I hope this helps! Let me know if you have any other questions."
+,"Sure, I can help you with SQL queries for the MASTER database.
+
+**1. Retrieve all records for students with a CGPA greater than 9:**
+
+```
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+```
+
+**2. Find the count of students with active backlogs:**
+
+```
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE `Active Backlogs` > 0;
+```
+
+**3. Show details for students who have an academic gap of more than 1 year:**
+
+```
+SELECT Name, Registration, SECTION, Academic_Gap
+FROM MASTER
+WHERE Academic_Gap > 1;
+```
+
+**4. Get the average CGPA for students in the 'Data Science' UG-Specialization:**
+
+```
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Department = 'UG';
+```
+
+**5. Find students from a specific city and state:**
+
+```
+SELECT Name, Registration, SECTION, City, State
+FROM MASTER
+WHERE City = 'Pune'
+AND State = 'Maharashtra';
+```
+
+**6. Show the top 5 students based on their 12th percentage:**
+
+```
+SELECT Name, Registration, SECTION, `12-Percentage`
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+```
+
+**7. Retrieve details for students born after a certain date:**
+
+```
+SELECT Name, Registration, SECTION, DOB
+FROM MASTER
+WHERE DOB > '1995-01-01';
+```
+
+**8. Retrieve complete details of the Student using LIKE Method or Function:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';
+```
+
+**9. Find the Details of the Entered Registration Number:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+```
+
+**10. Search if that 4 digit number is any sub number of any Registration number and return the Details:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%9920%';
+```
+
+Remember to replace the placeholder values (e.g., 'John', '99200', '9920') with the actual values you want to search for.
+
+I hope this helps! Let me know if you have any other questions."
+,"Sure, I can help you with SQL queries for the MASTER database.
+
+**1. Retrieve all records for students with a CGPA greater than 9:**
+
+```
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+```
+
+**2. Find the count of students with active backlogs:**
+
+```
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE `Active Backlogs` > 0;
+```
+
+**3. Show details for students who have an academic gap of more than 1 year:**
+
+```
+SELECT Name, Registration, SECTION, Academic_Gap
+FROM MASTER
+WHERE Academic_Gap > 1;
+```
+
+**4. Get the average CGPA for students in the 'Data Science' UG-Specialization:**
+
+```
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Department = 'UG';
+```
+
+**5. Find students from a specific city and state:**
+
+```
+SELECT Name, Registration, SECTION, City, State
+FROM MASTER
+WHERE City = 'Pune'
+AND State = 'Maharashtra';
+```
+
+**6. Show the top 5 students based on their 12th percentage:**
+
+```
+SELECT Name, Registration, SECTION, `12-Percentage`
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+```
+
+**7. Retrieve details for students born after a certain date:**
+
+```
+SELECT Name, Registration, SECTION, DOB
+FROM MASTER
+WHERE DOB > '1995-01-01';
+```
+
+**8. Retrieve complete details of the Student using LIKE Method or Function:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';
+```
+
+**9. Find the Details of the Entered Registration Number:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+```
+
+**10. Search if that 4 digit number is any sub number of any Registration number and return the Details:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%9920%';
+```
+
+Remember to replace the placeholder values (e.g., 'John', '99200', '9920') with the actual values you want to search for.
+
+I hope this helps! Let me know if you have any other questions."
+,"Sure, I can help you with SQL queries for the MASTER database.
+
+**1. Retrieve all records for students with a CGPA greater than 9:**
+
+```
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+```
+
+**2. Find the count of students with active backlogs:**
+
+```
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE `Active Backlogs` > 0;
+```
+
+**3. Show details for students who have an academic gap of more than 1 year:**
+
+```
+SELECT Name, Registration, SECTION, Academic_Gap
+FROM MASTER
+WHERE Academic_Gap > 1;
+```
+
+**4. Get the average CGPA for students in the 'Data Science' UG-Specialization:**
+
+```
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Department = 'UG';
+```
+
+**5. Find students from a specific city and state:**
+
+```
+SELECT Name, Registration, SECTION, City, State
+FROM MASTER
+WHERE City = 'Pune'
+AND State = 'Maharashtra';
+```
+
+**6. Show the top 5 students based on their 12th percentage:**
+
+```
+SELECT Name, Registration, SECTION, `12-Percentage`
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+```
+
+**7. Retrieve details for students born after a certain date:**
+
+```
+SELECT Name, Registration, SECTION, DOB
+FROM MASTER
+WHERE DOB > '1995-01-01';
+```
+
+**8. Retrieve complete details of the Student using LIKE Method or Function:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';
+```
+
+**9. Find the Details of the Entered Registration Number:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+```
+
+**10. Search if that 4 digit number is any sub number of any Registration number and return the Details:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%9920%';
+```
+
+Remember to replace the placeholder values (e.g., 'John', '99200', '9920') with the actual values you want to search for.
+
+I hope this helps! Let me know if you have any other questions."
+,"Sure, I can help you with SQL queries for the MASTER database.
+
+**1. Retrieve all records for students with a CGPA greater than 9:**
+
+```
+SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE CGPA > 9;
+```
+
+**2. Find the count of students with active backlogs:**
+
+```
+SELECT COUNT(*) AS Active_Backlogs_Count
+FROM MASTER
+WHERE `Active Backlogs` > 0;
+```
+
+**3. Show details for students who have an academic gap of more than 1 year:**
+
+```
+SELECT Name, Registration, SECTION, Academic_Gap
+FROM MASTER
+WHERE Academic_Gap > 1;
+```
+
+**4. Get the average CGPA for students in the 'Data Science' UG-Specialization:**
+
+```
+SELECT AVG(CGPA) AS Average_CGPA
+FROM MASTER
+WHERE Specialization = 'Data Science'
+AND Department = 'UG';
+```
+
+**5. Find students from a specific city and state:**
+
+```
+SELECT Name, Registration, SECTION, City, State
+FROM MASTER
+WHERE City = 'Pune'
+AND State = 'Maharashtra';
+```
+
+**6. Show the top 5 students based on their 12th percentage:**
+
+```
+SELECT Name, Registration, SECTION, `12-Percentage`
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+```
+
+**7. Retrieve details for students born after a certain date:**
+
+```
+SELECT Name, Registration, SECTION, DOB
+FROM MASTER
+WHERE DOB > '1995-01-01';
+```
+
+**8. Retrieve complete details of the Student using LIKE Method or Function:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Name LIKE '%John%';
+```
+
+**9. Find the Details of the Entered Registration Number:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+```
+
+**10. Search if that 4 digit number is any sub number of any Registration number and return the Details:**
+
+```
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%9920%';
+```
+
+Remember to replace the placeholder values (e.g., 'John', '99200', '9920') with the actual values you want to search for.
+
+I hope this helps! Let me know if you have any other questions."
+Sanjay,"SELECT Name, Registration, Section, CGPA FROM MASTER WHERE Name LIKE '%Sanjay%';"
+,"Retrieve the names of students with a CGPA greater than 9.
+
+SELECT DISTINCT Name
+FROM MASTER
+WHERE CGPA>9;
+
+
+Find the count of students from the 'Computer Science' UG-Specialization.
+
+SELECT COUNT(Name)
+FROM MASTER
+WHERE Specialization = 'Computer Science';
+
+
+Show details of students who have an academic gap of more than 1 year.
+
+SELECT Name, Registration, DOB, Academic Gap
+FROM MASTER
+WHERE Academic Gap > 1;
+
+
+Get the average CGPA for students in the 'Data Science' UG-Specialization.
+
+SELECT AVG(CGPA)
+FROM MASTER
+WHERE Specialization = 'Data Science';
+
+
+Find students from a specific city and state.
+
+SELECT *
+FROM MASTER
+WHERE City = 'Bangalore' AND State = 'Karnataka';
+
+
+Show the top 5 students based on their 12th percentage.
+
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+
+Retrieve details for students born after a certain date.
+
+SELECT *
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+
+using LIKE Method or Function
+
+Retrieve complete details of the Student whose name starts with 'John'.
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE 'John%';
+
+
+Find the Details of the Registration Number entered by user.
+
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+
+
+Search if the entered 4 digit number is any sub number of any Registration number and return the Details.
+
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%abcd%'
+AND LENGTH(abcd) = 4;"
+,"Retrieve the names of students with a CGPA greater than 9.
+
+SELECT DISTINCT Name
+FROM MASTER
+WHERE CGPA>9;
+
+
+Find the count of students from the 'Computer Science' UG-Specialization.
+
+SELECT COUNT(Name)
+FROM MASTER
+WHERE Specialization = 'Computer Science';
+
+
+Show details of students who have an academic gap of more than 1 year.
+
+SELECT Name, Registration, DOB, Academic Gap
+FROM MASTER
+WHERE Academic Gap > 1;
+
+
+Get the average CGPA for students in the 'Data Science' UG-Specialization.
+
+SELECT AVG(CGPA)
+FROM MASTER
+WHERE Specialization = 'Data Science';
+
+
+Find students from a specific city and state.
+
+SELECT *
+FROM MASTER
+WHERE City = 'Bangalore' AND State = 'Karnataka';
+
+
+Show the top 5 students based on their 12th percentage.
+
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+
+Retrieve details for students born after a certain date.
+
+SELECT *
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+
+using LIKE Method or Function
+
+Retrieve complete details of the Student whose name starts with 'John'.
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE 'John%';
+
+
+Find the Details of the Registration Number entered by user.
+
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+
+
+Search if the entered 4 digit number is any sub number of any Registration number and return the Details.
+
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%abcd%'
+AND LENGTH(abcd) = 4;"
+,"Retrieve the names of students with a CGPA greater than 9.
+
+SELECT DISTINCT Name
+FROM MASTER
+WHERE CGPA>9;
+
+
+Find the count of students from the 'Computer Science' UG-Specialization.
+
+SELECT COUNT(Name)
+FROM MASTER
+WHERE Specialization = 'Computer Science';
+
+
+Show details of students who have an academic gap of more than 1 year.
+
+SELECT Name, Registration, DOB, Academic Gap
+FROM MASTER
+WHERE Academic Gap > 1;
+
+
+Get the average CGPA for students in the 'Data Science' UG-Specialization.
+
+SELECT AVG(CGPA)
+FROM MASTER
+WHERE Specialization = 'Data Science';
+
+
+Find students from a specific city and state.
+
+SELECT *
+FROM MASTER
+WHERE City = 'Bangalore' AND State = 'Karnataka';
+
+
+Show the top 5 students based on their 12th percentage.
+
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+
+Retrieve details for students born after a certain date.
+
+SELECT *
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+
+using LIKE Method or Function
+
+Retrieve complete details of the Student whose name starts with 'John'.
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE 'John%';
+
+
+Find the Details of the Registration Number entered by user.
+
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+
+
+Search if the entered 4 digit number is any sub number of any Registration number and return the Details.
+
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%abcd%'
+AND LENGTH(abcd) = 4;"
+,"Retrieve the names of students with a CGPA greater than 9.
+
+SELECT DISTINCT Name
+FROM MASTER
+WHERE CGPA>9;
+
+
+Find the count of students from the 'Computer Science' UG-Specialization.
+
+SELECT COUNT(Name)
+FROM MASTER
+WHERE Specialization = 'Computer Science';
+
+
+Show details of students who have an academic gap of more than 1 year.
+
+SELECT Name, Registration, DOB, Academic Gap
+FROM MASTER
+WHERE Academic Gap > 1;
+
+
+Get the average CGPA for students in the 'Data Science' UG-Specialization.
+
+SELECT AVG(CGPA)
+FROM MASTER
+WHERE Specialization = 'Data Science';
+
+
+Find students from a specific city and state.
+
+SELECT *
+FROM MASTER
+WHERE City = 'Bangalore' AND State = 'Karnataka';
+
+
+Show the top 5 students based on their 12th percentage.
+
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+
+Retrieve details for students born after a certain date.
+
+SELECT *
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+
+using LIKE Method or Function
+
+Retrieve complete details of the Student whose name starts with 'John'.
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE 'John%';
+
+
+Find the Details of the Registration Number entered by user.
+
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+
+
+Search if the entered 4 digit number is any sub number of any Registration number and return the Details.
+
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%abcd%'
+AND LENGTH(abcd) = 4;"
+,"Retrieve the names of students with a CGPA greater than 9.
+
+SELECT DISTINCT Name
+FROM MASTER
+WHERE CGPA>9;
+
+
+Find the count of students from the 'Computer Science' UG-Specialization.
+
+SELECT COUNT(Name)
+FROM MASTER
+WHERE Specialization = 'Computer Science';
+
+
+Show details of students who have an academic gap of more than 1 year.
+
+SELECT Name, Registration, DOB, Academic Gap
+FROM MASTER
+WHERE Academic Gap > 1;
+
+
+Get the average CGPA for students in the 'Data Science' UG-Specialization.
+
+SELECT AVG(CGPA)
+FROM MASTER
+WHERE Specialization = 'Data Science';
+
+
+Find students from a specific city and state.
+
+SELECT *
+FROM MASTER
+WHERE City = 'Bangalore' AND State = 'Karnataka';
+
+
+Show the top 5 students based on their 12th percentage.
+
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+
+Retrieve details for students born after a certain date.
+
+SELECT *
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+
+using LIKE Method or Function
+
+Retrieve complete details of the Student whose name starts with 'John'.
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE 'John%';
+
+
+Find the Details of the Registration Number entered by user.
+
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+
+
+Search if the entered 4 digit number is any sub number of any Registration number and return the Details.
+
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%abcd%'
+AND LENGTH(abcd) = 4;"
+,"Retrieve the names of students with a CGPA greater than 9.
+
+SELECT DISTINCT Name
+FROM MASTER
+WHERE CGPA>9;
+
+
+Find the count of students from the 'Computer Science' UG-Specialization.
+
+SELECT COUNT(Name)
+FROM MASTER
+WHERE Specialization = 'Computer Science';
+
+
+Show details of students who have an academic gap of more than 1 year.
+
+SELECT Name, Registration, DOB, Academic Gap
+FROM MASTER
+WHERE Academic Gap > 1;
+
+
+Get the average CGPA for students in the 'Data Science' UG-Specialization.
+
+SELECT AVG(CGPA)
+FROM MASTER
+WHERE Specialization = 'Data Science';
+
+
+Find students from a specific city and state.
+
+SELECT *
+FROM MASTER
+WHERE City = 'Bangalore' AND State = 'Karnataka';
+
+
+Show the top 5 students based on their 12th percentage.
+
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+
+Retrieve details for students born after a certain date.
+
+SELECT *
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+
+using LIKE Method or Function
+
+Retrieve complete details of the Student whose name starts with 'John'.
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE 'John%';
+
+
+Find the Details of the Registration Number entered by user.
+
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+
+
+Search if the entered 4 digit number is any sub number of any Registration number and return the Details.
+
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%abcd%'
+AND LENGTH(abcd) = 4;"
+,"Retrieve the names of students with a CGPA greater than 9.
+
+SELECT DISTINCT Name
+FROM MASTER
+WHERE CGPA>9;
+
+
+Find the count of students from the 'Computer Science' UG-Specialization.
+
+SELECT COUNT(Name)
+FROM MASTER
+WHERE Specialization = 'Computer Science';
+
+
+Show details of students who have an academic gap of more than 1 year.
+
+SELECT Name, Registration, DOB, Academic Gap
+FROM MASTER
+WHERE Academic Gap > 1;
+
+
+Get the average CGPA for students in the 'Data Science' UG-Specialization.
+
+SELECT AVG(CGPA)
+FROM MASTER
+WHERE Specialization = 'Data Science';
+
+
+Find students from a specific city and state.
+
+SELECT *
+FROM MASTER
+WHERE City = 'Bangalore' AND State = 'Karnataka';
+
+
+Show the top 5 students based on their 12th percentage.
+
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+
+Retrieve details for students born after a certain date.
+
+SELECT *
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+
+using LIKE Method or Function
+
+Retrieve complete details of the Student whose name starts with 'John'.
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE 'John%';
+
+
+Find the Details of the Registration Number entered by user.
+
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+
+
+Search if the entered 4 digit number is any sub number of any Registration number and return the Details.
+
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%abcd%'
+AND LENGTH(abcd) = 4;"
+,"Retrieve the names of students with a CGPA greater than 9.
+
+SELECT DISTINCT Name
+FROM MASTER
+WHERE CGPA>9;
+
+
+Find the count of students from the 'Computer Science' UG-Specialization.
+
+SELECT COUNT(Name)
+FROM MASTER
+WHERE Specialization = 'Computer Science';
+
+
+Show details of students who have an academic gap of more than 1 year.
+
+SELECT Name, Registration, DOB, Academic Gap
+FROM MASTER
+WHERE Academic Gap > 1;
+
+
+Get the average CGPA for students in the 'Data Science' UG-Specialization.
+
+SELECT AVG(CGPA)
+FROM MASTER
+WHERE Specialization = 'Data Science';
+
+
+Find students from a specific city and state.
+
+SELECT *
+FROM MASTER
+WHERE City = 'Bangalore' AND State = 'Karnataka';
+
+
+Show the top 5 students based on their 12th percentage.
+
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+
+Retrieve details for students born after a certain date.
+
+SELECT *
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+
+using LIKE Method or Function
+
+Retrieve complete details of the Student whose name starts with 'John'.
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE 'John%';
+
+
+Find the Details of the Registration Number entered by user.
+
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+
+
+Search if the entered 4 digit number is any sub number of any Registration number and return the Details.
+
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%abcd%'
+AND LENGTH(abcd) = 4;"
+,"Retrieve the names of students with a CGPA greater than 9.
+
+SELECT DISTINCT Name
+FROM MASTER
+WHERE CGPA>9;
+
+
+Find the count of students from the 'Computer Science' UG-Specialization.
+
+SELECT COUNT(Name)
+FROM MASTER
+WHERE Specialization = 'Computer Science';
+
+
+Show details of students who have an academic gap of more than 1 year.
+
+SELECT Name, Registration, DOB, Academic Gap
+FROM MASTER
+WHERE Academic Gap > 1;
+
+
+Get the average CGPA for students in the 'Data Science' UG-Specialization.
+
+SELECT AVG(CGPA)
+FROM MASTER
+WHERE Specialization = 'Data Science';
+
+
+Find students from a specific city and state.
+
+SELECT *
+FROM MASTER
+WHERE City = 'Bangalore' AND State = 'Karnataka';
+
+
+Show the top 5 students based on their 12th percentage.
+
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+
+Retrieve details for students born after a certain date.
+
+SELECT *
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+
+using LIKE Method or Function
+
+Retrieve complete details of the Student whose name starts with 'John'.
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE 'John%';
+
+
+Find the Details of the Registration Number entered by user.
+
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+
+
+Search if the entered 4 digit number is any sub number of any Registration number and return the Details.
+
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%abcd%'
+AND LENGTH(abcd) = 4;"
+,"Retrieve the names of students with a CGPA greater than 9.
+
+SELECT DISTINCT Name
+FROM MASTER
+WHERE CGPA>9;
+
+
+Find the count of students from the 'Computer Science' UG-Specialization.
+
+SELECT COUNT(Name)
+FROM MASTER
+WHERE Specialization = 'Computer Science';
+
+
+Show details of students who have an academic gap of more than 1 year.
+
+SELECT Name, Registration, DOB, Academic Gap
+FROM MASTER
+WHERE Academic Gap > 1;
+
+
+Get the average CGPA for students in the 'Data Science' UG-Specialization.
+
+SELECT AVG(CGPA)
+FROM MASTER
+WHERE Specialization = 'Data Science';
+
+
+Find students from a specific city and state.
+
+SELECT *
+FROM MASTER
+WHERE City = 'Bangalore' AND State = 'Karnataka';
+
+
+Show the top 5 students based on their 12th percentage.
+
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+ORDER BY `12-Percentage` DESC
+LIMIT 5;
+
+
+Retrieve details for students born after a certain date.
+
+SELECT *
+FROM MASTER
+WHERE DOB > '1995-01-01';
+
+
+using LIKE Method or Function
+
+Retrieve complete details of the Student whose name starts with 'John'.
+
+SELECT *
+FROM MASTER
+WHERE Name LIKE 'John%';
+
+
+Find the Details of the Registration Number entered by user.
+
+SELECT *
+FROM MASTER
+WHERE Registration = '99200';
+
+
+Search if the entered 4 digit number is any sub number of any Registration number and return the Details.
+
+SELECT *
+FROM MASTER
+WHERE Registration LIKE '%abcd%'
+AND LENGTH(abcd) = 4;"
+sanjay ,"SELECT Name, Registration, SECTION, CGPA
+FROM MASTER
+WHERE Name LIKE '%sanjay%';"
+List of Students from Kavali,"```sql
+SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE City = 'Kavali';
+```"
+List of Female students from Rayachoty,"SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE Gender = 'Female' AND City = 'Rayachoty';"
+List of Female students from Kavali,"SELECT Name, Registration, Section, CGPA
+FROM MASTER
+WHERE Gender = 'Female' AND City = 'Kavali';"
