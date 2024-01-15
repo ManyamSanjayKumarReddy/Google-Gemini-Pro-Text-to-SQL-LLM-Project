@@ -1,0 +1,57 @@
+Question,Query
+Top 10 Students ,"SELECT
+Name,
+Registration,
+CGPA
+FROM
+MASTER
+ORDER BY CGPA DESC
+LIMIT 10;"
+Topper of G Section,"SELECT Name
+FROM MASTER
+WHERE Section = 'G'
+ORDER BY CGPA DESC
+LIMIT 1;"
+Topper of H Section,"SELECT Name, CGPA
+FROM MASTER
+WHERE Section = 'H'
+ORDER BY CGPA DESC
+LIMIT 1;"
+list of Students from City Rayachoty,"SELECT *
+FROM MASTER
+WHERE City = 'Rayachoty';"
+Top 10 Students,"SELECT
+    Name,
+    Registration,
+    CGPA
+FROM
+    MASTER
+ORDER BY
+    CGPA DESC
+LIMIT 10;"
+Top 10 Students,"SELECT
+    Name,
+    Registration,
+    CGPA
+FROM
+    MASTER
+ORDER BY
+    CGPA DESC
+LIMIT 10;"
+Top 20 Students,"SELECT Name, CGPA
+FROM MASTER
+ORDER BY CGPA DESC
+LIMIT 20;"
+Top 20 Students,"SELECT Name, CGPA
+FROM MASTER
+ORDER BY CGPA DESC
+LIMIT 20;"
+Top 50 Students,"SELECT *
+FROM MASTER
+ORDER BY CGPA DESC
+LIMIT 50;"
+Topper of M Section,"SELECT Name, CGPA, Department, Section
+FROM MASTER
+WHERE Section = 'M'
+ORDER BY CGPA DESC
+LIMIT 1;"
