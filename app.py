@@ -109,7 +109,7 @@ def get_img_as_base64(file):
     return base64.b64encode(data).decode()
 
 
-img = get_img_as_base64("bg-set.jpg")
+img = get_img_as_base64("bgset2.jpg")
 
 
 page_bg_img = f"""
@@ -118,7 +118,7 @@ page_bg_img = f"""
 background-image: url("data:image/png;base64,{img}");
 background-size: 150%;
 background-position: top left;
-background-repeat: no-repeat;
+background-repeat: repeat;
 background-attachment: local;
 }}
 
@@ -274,7 +274,7 @@ if view_history_button:
 st.markdown(
     """
     ---
-    Copyright © 2024 Student Data Analyzer | Designed and Maintained by Mnayam Sanjay Kumar Reddy
+    Copyright © 2024 Student Data Analyzer | Designed and Maintained by Manyam Sanjay Kumar Reddy
     """
 )
 
